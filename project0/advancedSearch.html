@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="options">
+    <a href="index.html" id="link">Google</a>
+  </div>
+
+  <div class="advancedSearch">
+    <h1 id="heading">Advanced Search</h1>
+
+    <form action="https://www.google.com/search" method="get">
+  <table>
+    <tr>
+      <td><label id="para">All these words:</label></td>
+      <td><input type="text" name="as_q" id="aq" /></td>
+    </tr>
+    <tr>
+      <td><label id="para">This exact word or phrase:</label></td>
+      <td><input type="text" name="as_epq" id="aq" /></td>
+    </tr>
+    <tr>
+      <td><label id="para">Any of these words:</label></td>
+      <td><input type="text" name="as_oq" id="aq" /></td>
+    </tr>
+    <tr>
+      <td><label id="para">None of these words:</label></td>
+      <td><input type="text" name="as_eq" id="aq" /></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <input type="submit" value="Advanced Search" id="searchButton" />
+      </td>
+    </tr>
+  </table>
+</form>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ background: linear-gradient(135deg, #000000, #5813fa); /* Dark purple to light lavender */
+  font-family: Arial, sans-serif;
+}
+
+/* Header link row */
+.options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+  padding: 2em;
+  margin: auto;
+}
+
+/* Main container for heading + search bar + buttons */
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 16em); /* adjusts for .options height */
+  margin: 0;
+}
+
+/* Big "Google" heading */
+#heading {
+  font-size: 5em;
+  color: #ffffff;
+}
+
+/* Search input */
+#q {
+  width: 40em;
+  height: 1.75em;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  border: none;
+  font-size: 1em;
+  margin-bottom: 2em;
+     background: rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.3),
+    0 4px 30px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+/* Button container */
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em; 
+  height: 3em;
+}
+
+/* Individual buttons */
+#searchButton {
+  width: 10em;
+  height: 2.5em;
+  font-size: 0.9em;
+  border-radius: 0.25em;
+  color: white;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1); 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#searchButton:hover {
+   background: rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.3),
+    0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Top right link */
+#link {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 1em;
+}
+
+#link:hover,
+#link:active,
+#link:visited {
+text-shadow: 0 0 8px #ffffff, 0 0 15px #b96eff;
+  color: #ffffff;
+}
+
+/*the label of the search bar*/
+#para{
+    color: #ffffff;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Advanced search */
+.advancedSearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1em;
+  flex-direction: column;
+}
+
+#aq{
+    width: 40em;
+  height: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+    background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 4px 30px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2em;
+  border: solid white 1px;
+  color: #ffffff;
+  background-color: #202124;
+  vertical-align: middle;
+} 
+
+table td {
+  vertical-align: middle;
+  padding: 8px 10px;
+} 
