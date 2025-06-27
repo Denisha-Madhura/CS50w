@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'encyclopedia/styles.css' %}" />
+  </head>
+  <body>
+    <div class="home">
+      <a href="{% url 'index' %}" id="link"><button id = "home">Back to home</button></a>
+      <a href="{% url 'edit' title %}" id="link"><button id="home">Edit</button></a>
+    </div>
+    <div>{{ content|safe }}</div>
+  </body>
+</html>

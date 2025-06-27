@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'encyclopedia/styles.css' %}" />
+    <title>Create or Edit Page</title>
+</head>
+<body>
+    <h1>{% if editing %}Edit Page: {{ title }}{% else %}Create a New Wiki Page{% endif %}</h1>
+
+
+    <form method = "post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="Submit"> Save </button>
+    </form>
+      <a href="{% url 'index' %}" id="link"><button>Back to home</button></a>
+
+    {% if html_output %}
+    <hr>
+    <h2> Preview: {{title}} </h2>
+        {{html_output}}
+        {% endif %}
+</body>
+</html>
